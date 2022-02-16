@@ -1,11 +1,7 @@
 const { Client, Intents, Collection, MessageEmbed, Permissions } = require("discord.js");
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS] }); // Har intenti niaz bood add bedid!
 const fs  = require("fs");
-/* 
-man az quick.db estefade kardm ke benazar khodamam khob nist :|
-age khastid be delkhah khodeton change bedid vali bara start khobe...
-*/
-const db = require('quick.db');
+
 /* 
 logger sade!
 */
@@ -14,15 +10,6 @@ const Config = require('./config.json');
 const express = require('express');
 const chalk = require("chalk");
 const app = express();
-/* 
-autoposter bara ine ke info shard/tedad guild ro be site POST kone pas age 
-niaz nadarid pakesh konid
-...
-info bishtar : 
-https://docs.top.gg/
-*/
-const { AutoPoster } = require('topgg-autoposter');
-const ap = AutoPoster(Config.TOPGGTOKEN, bot);
 
 /* 
 function routes bara rah endakhtan site shomast hamzaman ba bot bara masaref API o ...
@@ -75,14 +62,7 @@ full etelaat to file khodeshe
 */
 require('./ControlPanel')(bot)
 
-// har 30 min auto post mishe
-ap.on('posted', async () => {
-  log('topgg', 'Stats Updated!');
-})
-// error ham pish biad inja mizane
-ap.on('error', async (e) => {
-  log('topgg', `Error in Updating!\n${e}`);
-})
+
 
 bot.on("guildCreate", guild => {
   if(!guild.available) return //baazi guild haye bozorg gaha unavailable mishn bayad bot error nade o off nashe

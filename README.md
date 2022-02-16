@@ -7,8 +7,7 @@
 ## Requirements | Niaz ha
 
 1. Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
-2. Topgg token va topgg webhook **[Docs](https://docs.top.gg)**  
-3. Node.js v16.0.0 or newer
+4. Node.js v16.0.0 or newer
 
 ## Getting Started | Start?
 
@@ -24,12 +23,11 @@ baad ina too console `node index.js` bznid ya Starter.bat ro run konid | PM2 ham
 ## ⚙️ Config
 
 tagir value ha dar `config.json` be chizaye khaste shode.
+hardo LAZEM hastand.
 ```json
 {
     "TOKEN": "Token bot shoma",
     "ID": "Id bot shoma",
-    "TOPGGTOKEN": "Token top.gg (optional)",
-    "TOPGGWEBHOOK": "auth top.gg webhook (optional)"
 }
 ```
 
@@ -37,7 +35,7 @@ tagir value ha dar `config.json` be chizaye khaste shode.
 
 ## 📝 Emkanat
 
-1. Top.gg post va vote 
+1. ~~Top.gg post va vote~~ (To ye repo jadid miznm)
 2. ControlPanel Bot
 3. site motasel be source! (express.js bmola)
 4. System Log rangi
