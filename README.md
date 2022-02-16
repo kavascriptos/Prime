@@ -13,8 +13,8 @@
 ## Getting Started | Start?
 
 ```sh
-git clone https://github.com/polaroid-development/prime-handler-v13.git
-cd prime-handler-v13
+git clone https://github.com/polaroid-development/prime.git
+cd prime
 npm install
 ```
 ya download.zip
@@ -28,8 +28,8 @@ tagir value ha dar `config.json` be chizaye khaste shode.
 {
     "TOKEN": "Token bot shoma",
     "ID": "Id bot shoma",
-    "TOPGGTOKEN": "Token top.gg",
-    "TOPGGWEBHOOK": "auth top.gg webhook"
+    "TOPGGTOKEN": "Token top.gg (optional)",
+    "TOPGGWEBHOOK": "auth top.gg webhook (optional)"
 }
 ```
 
