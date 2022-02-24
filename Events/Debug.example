@@ -1,0 +1,18 @@
+const { MessageEmbed, ClientEvents } = require('discord.js'),
+ log = require('../Functions/PrimeLogger');
+
+module.exports = {
+	name: 'debug',
+	once: false,
+    /**   
+     * @param {ClientEvents} debug
+     */
+	execute(error) {
+
+        log('debug', debug);
+                 
+	},
+};
+
+
+// Agar khastid debug enable shavad, name in file ra az "Debug.example" be "Debug.js" taghir dahid o bot ra restart konid!

@@ -1,5 +1,5 @@
 
-const { MessageEmbed } = require('discord.js'),
+const { MessageEmbed, CommandInteraction } = require('discord.js'),
  { SlashCommandBuilder } = require('@discordjs/builders');
 //context menu ham mishe
 
@@ -11,12 +11,13 @@ module.exports = {
         .setName('test')
         .setDescription("تست کردن یک شخص")
         .addUserOption(o => o.setName('user').setDescription('تست کیو میخاید؟')).toJSON(),
+    /**
+     * @param {CommandInteraction} interaction 
+     */
     async execute(interaction) {
 
         const User = interaction.options.getUser('user') || interaction.user;
-        const ID = User.id;
-
-
+        
         const Embed = new MessageEmbed()
             .setDescription(`**تست ${User.username}**`)
             .setTitle(`شما تست شدید!`)

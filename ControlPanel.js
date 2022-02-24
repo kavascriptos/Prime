@@ -5,9 +5,12 @@ const wait = require('util').promisify(setTimeout),
 	Config = require('./config.json'),
 	log = require('./Functions/PrimeLogger'),
 	rest = new REST({ version: 9 }).setToken(Config.TOKEN),
-	{ MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
+	{ MessageEmbed, MessageActionRow, MessageButton, Client } = require('discord.js');
 
-
+/**
+ * 
+ * @param {Client} bot 
+ */
 module.exports = async function (bot) {
 
 

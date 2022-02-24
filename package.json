@@ -1,7 +1,7 @@
 {
-  "name": "prime-handler",
+  "name": "prime",
   "version": "1.0.0",
-  "description": "Prime Handler | Polaroid's mid-level command handler based on Discord.JS V13 ",
+  "description": "Prime Handler | Polarbearz's mid-level command handler based on Discord.JS V13 ",
   "main": "index.js",
   "dependencies": {
     "@discordjs/builders": "^0.8.2",
@@ -24,6 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "Polaroid-Development",
+  "author": "PolarBearzOfficial",
   "license": "MIT"
 }
