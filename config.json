@@ -1,5 +1,7 @@
 {
     "TOKEN": "Token bot shoma",
     "ID": "Id bot shoma",
-    "JoinServerChannel": "id channel"
+    "JoinServerChannel": "id channel",
+    "DeveloperUserID": "user id",
+    "ControlPanelChannel": "channel id"
 }

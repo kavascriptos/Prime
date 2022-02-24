@@ -32,7 +32,7 @@ module.exports = async function (bot) {
 			);
 
 
-		const Channel = bot.channels.cache.get('Ye Channel Private');
+		const Channel = bot.channels.cache.get(Config.ControlPanelChannel);
 		await Channel.bulkDelete(80);
 		await wait(1500);
 
@@ -43,7 +43,7 @@ module.exports = async function (bot) {
 
 		collector.on('collect', async i => {
 
-			if (i.user.id === 'USER ID DEV') {
+			if (i.user.id === Config.DeveloperUserID) {
 
 				if (i.customId === 'plash') {
 					const commandz = [];
