@@ -6,6 +6,6 @@ title Prime Handler
 
 cls
 
-node indez.js
+node index.js
 
 goto :top
