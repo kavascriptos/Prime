@@ -52,10 +52,9 @@ module.exports = async (type, content) => {
         case 'topgg':
             console.log(`${Time} - [${chalk.cyanBright(type.toUpperCase())}] : ${chalk.whiteBright(content)}`)
             break;
-    
+
         default:
             throw new Error(`:x: | Type Logger Invalid Ast!`)
-            break;
     }
 
 
